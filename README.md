@@ -18,3 +18,26 @@ You can find below hint on the HTML and CSS validation of your project. **It doe
 - Current status the main branch : ![HTML VALIDATIOn](../../actions/workflows/validateHTML.yml/badge.svg?branch=main)
 
 You can also [check the accessibility of your website](https://devweb.estia.fr/accessibility/) 
+# ESTIA Loc
+
+Plateforme de location pour les étudiants de l'ESTIA.
+
+## Structure du projet
+
+- `index.html` + `index.css`: Page de connexion
+- `inscription.html` + `inscription.css`: Page d'inscription
+- `accueil.html` + `accueil.css`: Page d'accueil
+- `profil.html` + `profil.css`: Page de profil
+- `dev.html` + `dev.css`: Page en développement
+
+## Navigation
+
+1. Page de connexion → Se connecter → Page d'accueil
+2. Page de connexion → Créer un compte → Page d'inscription
+3. Page d'accueil → Menu → Différentes pages
+
+## Technologies
+
+- HTML5
+- CSS3
+- Aucun JavaScript (navigation pure HTML)
