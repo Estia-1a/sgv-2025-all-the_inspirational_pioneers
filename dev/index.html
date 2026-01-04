@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développement - ESTIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="Logoestia.png" alt="ESTIA Logo" class="logo-image">
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index/index.html">Index</a></li>
+                    <li><a href="../accueil/index.html">Accueil</a></li>
+                    <li><a href="index.html" class="active">Dev</a></li>
+                    <li><a href="../profil/index.html">Profil</a></li>
+                    <li><a href="index.html" class="btn-cta">Connexion</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Centre de Développement</h1>
+                <p class="hero-subtitle">Outils et ressources pour les développeurs de la plateforme ESTIA</p>
+                <div class="hero-buttons">
+                    <a href="#docs" class="btn btn-primary">Documentation</a>
+                    <a href="#api" class="btn btn-secondary">API Reference</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Documentation -->
+    <section id="docs" class="docs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Documentation</h2>
+                <p>Guides et références pour développer avec l'API ESTIA</p>
+            </div>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="doc-icon">🚀</div>
+                    <h3>Guide de Démarrage</h3>
+                    <p>Commencez rapidement avec l'API ESTIA grâce à notre guide pas à pas</p>
+                    <a href="#" class="doc-link">Lire le guide</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">🔧</div>
+                    <h3>API Reference</h3>
+                    <p>Documentation complète de tous les endpoints disponibles</p>
+                    <a href="#" class="doc-link">Voir l'API</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">📚</div>
+                    <h3>SDK & Libraries</h3>
+                    <p>Bibliothèques et SDK pour différents langages de programmation</p>
+                    <a href="#" class="doc-link">Télécharger</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">🧪</div>
+                    <h3>Tests & Sandbox</h3>
+                    <p>Environnement de test pour expérimenter avec l'API</p>
+                    <a href="#" class="doc-link">Accéder au sandbox</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section API -->
+    <section id="api" class="api">
+        <div class="container">
+            <div class="section-header">
+                <h2>Endpoints Principaux</h2>
+                <p>Découvrez les principales fonctionnalités de l'API ESTIA</p>
+            </div>
+            <div class="api-grid">
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <span class="endpoint-url">/api/users</span>
+                    </div>
+                    <p>Récupère la liste des utilisateurs étudiants</p>
+                    <div class="endpoint-meta">
+                        <span class="auth">Auth: Bearer Token</span>
+                    </div>
+                </div>
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method post">POST</span>
+                        <span class="endpoint-url">/api/accommodations</span>
+                    </div>
+                    <p>Crée une nouvelle annonce de logement</p>
+                    <div class="endpoint-meta">
+                        <span class="auth">Auth: Bearer Token</span>
+                    </div>
+                </div>
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <span class="endpoint-url">/api/events</span>
+                    </div>
+                    <p>Récupère la liste des événements étudiants</p>
+                    <div class="endpoint-meta">
+                        <span class="auth">Public</span>
+                    </div>
+                </div>
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method put">PUT</span>
+                        <span class="endpoint-url">/api/profile</span>
+                    </div>
+                    <p>Met à jour le profil de l'utilisateur</p>
+                    <div class="endpoint-meta">
+                        <span class="auth">Auth: Bearer Token</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Outils -->
+    <section class="tools">
+        <div class="container">
+            <div class="section-header">
+                <h2>Outils de Développement</h2>
+                <p>Utilitaires et outils pour faciliter le développement</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🔑</div>
+                    <h3>Générateur de Token</h3>
+                    <p>Créez des tokens d'authentification pour vos tests</p>
+                    <button class="tool-action">Générer</button>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📊</div>
+                    <h3>Monitoring API</h3>
+                    <p>Surveillez les performances de vos requêtes API</p>
+                    <button class="tool-action">Voir les stats</button>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🧰</div>
+                    <h3>Client REST</h3>
+                    <p>Testez vos requêtes avec notre client REST intégré</p>
+                    <button class="tool-action">Ouvrir le client</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ESTIA Dev</h3>
+                    <p>Centre de développement et documentation pour l'écosystème ESTIA</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index/index.html">Index</a></li>
+                        <li><a href="../accueil/index.html">Accueil</a></li>
+                        <li><a href="index.html">Dev</a></li>
+                        <li><a href="../profil/index.html">Profil</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support Dev</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Stack Overflow</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ESTIA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

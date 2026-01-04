@@ -40,4 +40,3 @@ Plateforme de location pour les étudiants de l'ESTIA.
 
 - HTML5
 - CSS3
-- Aucun JavaScript (navigation pure HTML)
